@@ -1,0 +1,35 @@
+nohup: ignoring input
+Loading data...
+Loading checkpoint...
+  fp_size=4096  asso_dim=512  n_templates=11800
+Building model...
+  Missing: []  Unexpected: []
+  Model loaded OK
+Computing fingerprints...
+  FP shape: torch.Size([5007, 4096])
+Running inference...
+  256/5007
+  2816/5007
+  top_score mean=0.4971
+Evaluating correctness (~10 min)...
+  0/5007
+  500/5007
+  1000/5007
+  1500/5007
+  2000/5007
+  2500/5007
+  3000/5007
+  3500/5007
+  4000/5007
+  4500/5007
+  5000/5007
+  Top-1 accuracy: 46.63%
+Saved: /workspace/mhn-react/mhn_baseline.csv
+Overall AUROC: 0.7412
+
+Tier                       n     Acc    Mean_UQ   AUROC
+1) very rare (1-5)          1835    0.281      0.644    0.671
+2) rare (6-20)               785    0.469      0.509    0.714
+3) common (21-100)          1097    0.539      0.453    0.714
+4) very common (100+)       1290    0.667      0.341    0.744
+Done.

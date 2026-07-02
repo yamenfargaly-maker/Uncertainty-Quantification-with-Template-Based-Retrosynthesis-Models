@@ -1,0 +1,65 @@
+nohup: ignoring input
+seeded with 5
+loading X, y from csv
+train 40008 samples
+valid 5001 samples
+test 5007 samples
+11800 templates
+[759, 355, 241, 210, 138, 132, 90, 99, 69, 49, 44, 2821, 1852]
+{'fingerprint_type': 'morgan', 'template_fp_type': 'rdk', 'num_templates': 11800, 'fp_size': 4096, 'fp_radius': 2, 'device': 'cuda:0', 'batch_size': 128, 'pooling_operation_state_embedding': 'mean', 'pooling_operation_head': 'max', 'dropout': 0.2, 'lr': 0.0005, 'optimizer': 'Adam', 'activation_function': 'ReLU', 'verbose': False, 'hopf_input_size': 4096, 'hopf_output_size': None, 'hopf_num_heads': 1, 'hopf_asso_dim': 512, 'hopf_association_activation': 'None', 'hopf_beta': 0.05, 'norm_input': True, 'norm_asso': True, 'hopf_n_layers': 1, 'mol_encoder_layers': 1, 'temp_encoder_layers': 1, 'encoder_af': 'ReLU', 'hopf_pooling_operation_head': 'mean'}
+loading tfp from file ./data/cache/templ_emb_4096_rdk2_11800_319308756406610263009709791057247232169953402565012761665882794469049907419597432806619930615825219861593907665538161448220007278140048617814857686486870.npy
+Num of templates with added rand-vect of size 409 due to >=thresh (1): 10216
+(11800, 409) (11800,) 10216
+(11800, 4096) 11800
+adding template_matrix to params
+0it [00:00, ?it/s]159it [00:02, 79.06it/s]313it [00:03, 81.02it/s]
+valid evaluatingtest evaluating 0 -- train_loss: 4.326, loss_valid: 3.895, val_t1acc: 0.321, val_t100acc: 0.831
+   [ES] New best val_loss=3.8953 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]170it [00:02, 85.00it/s]313it [00:03, 85.78it/s]
+valid evaluatingtest evaluating 1 -- train_loss: 2.935, loss_valid: 3.420, val_t1acc: 0.370, val_t100acc: 0.882
+   [ES] New best val_loss=3.4198 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]173it [00:02, 86.34it/s]313it [00:03, 86.78it/s]
+valid evaluatingtest evaluating 2 -- train_loss: 2.278, loss_valid: 3.307, val_t1acc: 0.389, val_t100acc: 0.887
+   [ES] New best val_loss=3.3070 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]162it [00:02, 80.83it/s]313it [00:03, 80.77it/s]
+valid evaluatingtest evaluating 3 -- train_loss: 1.868, loss_valid: 3.225, val_t1acc: 0.401, val_t100acc: 0.890
+   [ES] New best val_loss=3.2254 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]159it [00:02, 79.34it/s]313it [00:03, 80.34it/s]
+valid evaluatingtest evaluating 4 -- train_loss: 1.602, loss_valid: 3.205, val_t1acc: 0.408, val_t100acc: 0.888
+   [ES] New best val_loss=3.2050 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]172it [00:02, 85.89it/s]313it [00:03, 86.15it/s]
+valid evaluatingtest evaluating 5 -- train_loss: 1.407, loss_valid: 3.179, val_t1acc: 0.409, val_t100acc: 0.892
+   [ES] New best val_loss=3.1786 -> saved ./data/model/mhn_best_checkpoint_mhn_ens2_seed5_1782959362.pt
+0it [00:00, ?it/s]169it [00:02, 84.07it/s]313it [00:03, 85.49it/s]
+valid evaluatingtest evaluating 6 -- train_loss: 1.271, loss_valid: 3.223, val_t1acc: 0.411, val_t100acc: 0.888
+   [ES] No improvement 1/10 (best=3.1786)
+0it [00:00, ?it/s]169it [00:02, 84.03it/s]313it [00:03, 83.59it/s]
+valid evaluatingtest evaluating 7 -- train_loss: 1.152, loss_valid: 3.211, val_t1acc: 0.409, val_t100acc: 0.884
+   [ES] No improvement 2/10 (best=3.1786)
+0it [00:00, ?it/s]171it [00:02, 85.46it/s]313it [00:03, 83.73it/s]
+valid evaluatingtest evaluating 8 -- train_loss: 1.072, loss_valid: 3.221, val_t1acc: 0.409, val_t100acc: 0.885
+   [ES] No improvement 3/10 (best=3.1786)
+0it [00:00, ?it/s]164it [00:02, 81.56it/s]313it [00:03, 81.10it/s]
+valid evaluatingtest evaluating 9 -- train_loss: 1.002, loss_valid: 3.258, val_t1acc: 0.406, val_t100acc: 0.878
+   [ES] No improvement 4/10 (best=3.1786)
+0it [00:00, ?it/s]162it [00:02, 80.89it/s]313it [00:03, 81.25it/s]
+valid evaluatingtest evaluating10 -- train_loss: 0.921, loss_valid: 3.238, val_t1acc: 0.401, val_t100acc: 0.881
+   [ES] No improvement 5/10 (best=3.1786)
+0it [00:00, ?it/s]170it [00:02, 84.71it/s]313it [00:03, 85.83it/s]
+valid evaluatingtest evaluating11 -- train_loss: 0.903, loss_valid: 3.289, val_t1acc: 0.408, val_t100acc: 0.875
+   [ES] No improvement 6/10 (best=3.1786)
+0it [00:00, ?it/s]151it [00:02, 75.26it/s]313it [00:03, 78.88it/s]
+valid evaluatingtest evaluating12 -- train_loss: 0.853, loss_valid: 3.257, val_t1acc: 0.410, val_t100acc: 0.882
+   [ES] No improvement 7/10 (best=3.1786)
+0it [00:00, ?it/s]170it [00:02, 84.64it/s]313it [00:03, 85.27it/s]
+valid evaluatingtest evaluating13 -- train_loss: 0.822, loss_valid: 3.293, val_t1acc: 0.407, val_t100acc: 0.877
+   [ES] No improvement 8/10 (best=3.1786)
+0it [00:00, ?it/s]156it [00:02, 77.90it/s]313it [00:03, 79.82it/s]
+valid evaluatingtest evaluating14 -- train_loss: 0.790, loss_valid: 3.271, val_t1acc: 0.409, val_t100acc: 0.879
+   [ES] No improvement 9/10 (best=3.1786)
+0it [00:00, ?it/s]168it [00:02, 83.69it/s]313it [00:03, 85.05it/s]
+valid evaluatingtest evaluating15 -- train_loss: 0.767, loss_valid: 3.299, val_t1acc: 0.411, val_t100acc: 0.873
+   [ES] No improvement 10/10 (best=3.1786)
+   [ES] Early stopping triggered! Best val_loss=3.1786
+model saved to data/model/USPTO_50k_mhn_valloss3.299_mhn_ens2_seed5_1782959362.pt
+3.178562009334564

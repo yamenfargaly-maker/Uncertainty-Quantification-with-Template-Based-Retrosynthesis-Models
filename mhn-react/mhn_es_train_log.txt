@@ -1,0 +1,53 @@
+nohup: ignoring input
+seeded with 0
+loading X, y from csv
+test 5007 samples
+train 40008 samples
+valid 5001 samples
+11800 templates
+[759, 355, 241, 210, 138, 132, 90, 99, 69, 49, 44, 2821, 1852]
+{'fingerprint_type': 'morgan', 'template_fp_type': 'rdk', 'num_templates': 11800, 'fp_size': 4096, 'fp_radius': 2, 'device': 'cuda:0', 'batch_size': 128, 'pooling_operation_state_embedding': 'mean', 'pooling_operation_head': 'max', 'dropout': 0.2, 'lr': 0.0005, 'optimizer': 'Adam', 'activation_function': 'ReLU', 'verbose': False, 'hopf_input_size': 4096, 'hopf_output_size': None, 'hopf_num_heads': 1, 'hopf_asso_dim': 512, 'hopf_association_activation': 'None', 'hopf_beta': 0.05, 'norm_input': True, 'norm_asso': True, 'hopf_n_layers': 1, 'mol_encoder_layers': 1, 'temp_encoder_layers': 1, 'encoder_af': 'ReLU', 'hopf_pooling_operation_head': 'mean'}
+updating template-embedding; (just computing the template-fingerprint and using that)
+  0%|          | 0/11800 [00:00<?, ?it/s] 21%|██▏       | 2530/11800 [00:01<00:03, 2504.16it/s] 48%|████▊     | 5702/11800 [00:02<00:02, 2892.51it/s] 74%|███████▍  | 8726/11800 [00:03<00:01, 2946.93it/s]100%|██████████| 11800/11800 [00:03<00:00, 2999.71it/s]
+  0%|          | 0/11800 [00:00<?, ?it/s] 23%|██▎       | 2759/11800 [00:01<00:03, 2720.22it/s] 50%|████▉     | 5873/11800 [00:02<00:02, 2926.95it/s] 76%|███████▋  | 9023/11800 [00:03<00:00, 2983.85it/s]100%|██████████| 11800/11800 [00:03<00:00, 3043.73it/s]
+Num of templates with added rand-vect of size 409 due to >=thresh (1): 10216
+(11800, 409) (11800,) 10216
+(11800, 4096) 11800
+adding template_matrix to params
+0it [00:00, ?it/s]149it [00:02, 74.46it/s]310it [00:04, 77.90it/s]313it [00:04, 77.41it/s]
+valid evaluatingtest evaluating 0 -- train_loss: 4.264, loss_valid: 3.929, val_t1acc: 0.329, val_t100acc: 0.830
+0it [00:00, ?it/s]167it [00:02, 83.26it/s]313it [00:03, 80.59it/s]
+valid evaluatingtest evaluating 1 -- train_loss: 2.930, loss_valid: 3.471, val_t1acc: 0.377, val_t100acc: 0.872
+0it [00:00, ?it/s]161it [00:02, 80.33it/s]313it [00:03, 80.15it/s]
+valid evaluatingtest evaluating 2 -- train_loss: 2.293, loss_valid: 3.296, val_t1acc: 0.388, val_t100acc: 0.888
+0it [00:00, ?it/s]163it [00:02, 81.18it/s]313it [00:03, 80.83it/s]
+valid evaluatingtest evaluating 3 -- train_loss: 1.875, loss_valid: 3.231, val_t1acc: 0.400, val_t100acc: 0.886
+0it [00:00, ?it/s]166it [00:02, 82.75it/s]313it [00:03, 83.88it/s]
+valid evaluatingtest evaluating 4 -- train_loss: 1.598, loss_valid: 3.238, val_t1acc: 0.403, val_t100acc: 0.893
+0it [00:00, ?it/s]156it [00:02, 77.80it/s]313it [00:03, 78.43it/s]
+valid evaluatingtest evaluating 5 -- train_loss: 1.413, loss_valid: 3.206, val_t1acc: 0.412, val_t100acc: 0.891
+0it [00:00, ?it/s]157it [00:02, 78.37it/s]313it [00:04, 77.16it/s]
+valid evaluatingtest evaluating 6 -- train_loss: 1.266, loss_valid: 3.193, val_t1acc: 0.412, val_t100acc: 0.888
+0it [00:00, ?it/s]158it [00:02, 78.86it/s]313it [00:04, 77.86it/s]
+valid evaluatingtest evaluating 7 -- train_loss: 1.166, loss_valid: 3.251, val_t1acc: 0.400, val_t100acc: 0.884
+0it [00:00, ?it/s]160it [00:02, 79.60it/s]313it [00:03, 79.70it/s]
+valid evaluatingtest evaluating 8 -- train_loss: 1.081, loss_valid: 3.243, val_t1acc: 0.408, val_t100acc: 0.886
+0it [00:00, ?it/s]161it [00:02, 80.11it/s]313it [00:03, 80.22it/s]
+valid evaluatingtest evaluating 9 -- train_loss: 1.004, loss_valid: 3.249, val_t1acc: 0.409, val_t100acc: 0.883
+0it [00:00, ?it/s]160it [00:02, 79.80it/s]313it [00:03, 78.74it/s]
+valid evaluatingtest evaluating10 -- train_loss: 0.943, loss_valid: 3.235, val_t1acc: 0.417, val_t100acc: 0.882
+0it [00:00, ?it/s]157it [00:02, 78.34it/s]313it [00:04, 77.33it/s]
+valid evaluatingtest evaluating11 -- train_loss: 0.904, loss_valid: 3.244, val_t1acc: 0.411, val_t100acc: 0.884
+0it [00:00, ?it/s]163it [00:02, 81.11it/s]313it [00:03, 80.51it/s]
+valid evaluatingtest evaluating12 -- train_loss: 0.859, loss_valid: 3.267, val_t1acc: 0.411, val_t100acc: 0.882
+0it [00:00, ?it/s]162it [00:02, 80.55it/s]313it [00:03, 80.36it/s]
+valid evaluatingtest evaluating13 -- train_loss: 0.827, loss_valid: 3.281, val_t1acc: 0.417, val_t100acc: 0.881
+0it [00:00, ?it/s]164it [00:02, 81.58it/s]313it [00:03, 81.41it/s]
+valid evaluatingtest evaluating14 -- train_loss: 0.803, loss_valid: 3.280, val_t1acc: 0.412, val_t100acc: 0.880
+0it [00:00, ?it/s]161it [00:02, 80.17it/s]313it [00:03, 79.48it/s]
+valid evaluatingtest evaluating15 -- train_loss: 0.771, loss_valid: 3.307, val_t1acc: 0.409, val_t100acc: 0.880
+0it [00:00, ?it/s]157it [00:02, 78.43it/s]313it [00:03, 80.23it/s]
+valid evaluatingtest evaluating16 -- train_loss: 0.743, loss_valid: 3.312, val_t1acc: 0.411, val_t100acc: 0.879
+0it [00:00, ?it/s]161it [00:02, 80.03it/s]313it [00:03, 80.19it/s]
+valid evaluatingtest evaluating17 -- train_loss: 0.718, loss_valid: 3.284, val_t1acc: 0.412, val_t100acc: 0.875
+0it [00:00, ?it/s]171it [00:02, 85.27it/s]313it [00:03, 82.66it/s]

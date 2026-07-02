@@ -1,0 +1,46 @@
+nohup: ignoring input
+seeded with 0
+loading X, y from csv
+test 5007 samples
+valid 5001 samples
+train 40008 samples
+11800 templates
+obfuscating 706 templates because they are only in test
+[759, 355, 241, 210, 138, 132, 90, 99, 69, 49, 44, 2821, 1852]
+{'fingerprint_type': 'morgan', 'template_fp_type': 'rdk', 'num_templates': 11800, 'fp_size': 4096, 'fp_radius': 2, 'device': 'cuda:0', 'batch_size': 128, 'pooling_operation_state_embedding': 'mean', 'pooling_operation_head': 'max', 'dropout': 0.2, 'lr': 0.0005, 'optimizer': 'Adam', 'activation_function': 'ReLU', 'verbose': False, 'hopf_input_size': 4096, 'hopf_output_size': None, 'hopf_num_heads': 1, 'hopf_asso_dim': 512, 'hopf_association_activation': 'None', 'hopf_beta': 0.05, 'norm_input': True, 'norm_asso': True, 'hopf_n_layers': 1, 'mol_encoder_layers': 1, 'temp_encoder_layers': 1, 'encoder_af': 'ReLU', 'hopf_pooling_operation_head': 'mean'}
+loading tfp from file ./data/cache/templ_emb_4096_rdk2_11800_5854610437078579843841453284346972473875662921463140419388261575361415213389916933693998864075020914850195914610357939423215965314516020256039769991581398.npy
+Num of templates with added rand-vect of size 409 due to >=thresh (1): 10216
+(11800, 409) (11800,) 10216
+(11800, 4096) 11800
+adding template_matrix to params
+0it [00:00, ?it/s]158it [00:02, 78.72it/s]313it [00:03, 82.10it/s]
+valid evaluatingtest evaluating 0 -- train_loss: 4.249, loss_valid: 3.877, val_t1acc: 0.326, val_t100acc: 0.839
+0it [00:00, ?it/s]173it [00:02, 86.02it/s]313it [00:03, 86.00it/s]
+valid evaluatingtest evaluating 1 -- train_loss: 2.916, loss_valid: 3.416, val_t1acc: 0.377, val_t100acc: 0.880
+0it [00:00, ?it/s]171it [00:02, 85.32it/s]313it [00:03, 85.58it/s]
+valid evaluatingtest evaluating 2 -- train_loss: 2.279, loss_valid: 3.246, val_t1acc: 0.393, val_t100acc: 0.895
+0it [00:00, ?it/s]154it [00:02, 76.99it/s]312it [00:04, 78.14it/s]313it [00:04, 77.93it/s]
+valid evaluatingtest evaluating 3 -- train_loss: 1.862, loss_valid: 3.191, val_t1acc: 0.401, val_t100acc: 0.893
+0it [00:00, ?it/s]159it [00:02, 79.35it/s]313it [00:03, 80.67it/s]
+valid evaluatingtest evaluating 4 -- train_loss: 1.590, loss_valid: 3.192, val_t1acc: 0.406, val_t100acc: 0.900
+0it [00:00, ?it/s]169it [00:02, 84.49it/s]313it [00:03, 82.83it/s]
+valid evaluatingtest evaluating 5 -- train_loss: 1.405, loss_valid: 3.161, val_t1acc: 0.412, val_t100acc: 0.898
+0it [00:00, ?it/s]159it [00:02, 79.45it/s]313it [00:03, 79.65it/s]
+valid evaluatingtest evaluating 6 -- train_loss: 1.261, loss_valid: 3.141, val_t1acc: 0.410, val_t100acc: 0.896
+0it [00:00, ?it/s]167it [00:02, 83.31it/s]313it [00:03, 84.15it/s]
+valid evaluatingtest evaluating 7 -- train_loss: 1.151, loss_valid: 3.177, val_t1acc: 0.404, val_t100acc: 0.896
+0it [00:00, ?it/s]170it [00:02, 84.51it/s]313it [00:03, 84.76it/s]
+valid evaluatingtest evaluating 8 -- train_loss: 1.079, loss_valid: 3.182, val_t1acc: 0.415, val_t100acc: 0.893
+0it [00:00, ?it/s]167it [00:02, 83.35it/s]313it [00:03, 83.82it/s]
+valid evaluatingtest evaluating 9 -- train_loss: 0.996, loss_valid: 3.195, val_t1acc: 0.410, val_t100acc: 0.889
+model saved to data/model/USPTO_50k_mhn_valloss3.195_mhn_uspto50k_1782860869.pt
+3.140904423594475
+testing on the real test set ;)
+execute all templates
+59082600 441874 0.007478919343427676
+len(X_fp[test]): 5007
+running the templates
+  0%|          | 0/5007 [00:00<?, ?it/s]  0%|          | 3/5007 [00:05<2:41:11,  1.93s/it]  0%|          | 5/5007 [00:12<3:48:56,  2.75s/it]  0%|          | 21/5007 [00:22<1:17:25,  1.07it/s]  0%|          | 21/5007 [00:39<1:17:25,  1.07it/s]  1%|          | 44/5007 [00:39<1:06:43,  1.24it/s]  1%|          | 44/5007 [00:49<1:06:43,  1.24it/s]  2%|▏         | 106/5007 [01:00<38:28,  2.12it/s]   5%|▌         | 265/5007 [01:18<17:03,  4.63it/s]  5%|▌         | 265/5007 [01:29<17:03,  4.63it/s]  7%|▋         | 356/5007 [01:42<17:53,  4.33it/s] 12%|█▏        | 591/5007 [01:47<08:11,  8.98it/s] 12%|█▏        | 591/5007 [01:59<08:11,  8.98it/s] 14%|█▎        | 679/5007 [02:08<10:09,  7.10it/s] 18%|█▊        | 917/5007 [02:11<05:24, 12.61it/s] 20%|█▉        | 1000/5007 [02:26<06:32, 10.20it/s] 22%|██▏       | 1097/5007 [02:34<06:10, 10.55it/s] 23%|██▎       | 1160/5007 [02:48<07:31,  8.52it/s] 24%|██▍       | 1200/5007 [03:01<09:23,  6.75it/s] 24%|██▍       | 1200/5007 [03:11<09:23,  6.75it/s] 26%|██▌       | 1313/5007 [03:12<07:54,  7.78it/s] 26%|██▌       | 1313/5007 [03:31<07:54,  7.78it/s] 27%|██▋       | 1337/5007 [03:50<16:57,  3.61it/s] 37%|███▋      | 1875/5007 [03:54<03:40, 14.20it/s] 37%|███▋      | 1875/5007 [04:11<03:40, 14.20it/s] 40%|███▉      | 1997/5007 [04:48<07:13,  6.94it/s] 48%|████▊     | 2383/5007 [04:53<03:37, 12.08it/s] 48%|████▊     | 2383/5007 [05:11<03:37, 12.08it/s] 50%|█████     | 2515/5007 [05:13<03:56, 10.55it/s] 50%|█████     | 2515/5007 [05:31<03:56, 10.55it/s] 51%|█████     | 2539/5007 [05:32<05:17,  7.77it/s] 56%|█████▌    | 2788/5007 [05:38<03:09, 11.71it/s] 56%|█████▌    | 2788/5007 [05:51<03:09, 11.71it/s] 58%|█████▊    | 2891/5007 [05:56<03:37,  9.71it/s] 60%|██████    | 3012/5007 [05:59<02:48, 11.83it/s] 60%|██████    | 3012/5007 [06:11<02:48, 11.83it/s] 60%|██████    | 3018/5007 [06:13<04:02,  8.21it/s] 62%|██████▏   | 3102/5007 [06:25<04:03,  7.82it/s] 62%|██████▏   | 3102/5007 [06:41<04:03,  7.82it/s] 64%|██████▍   | 3228/5007 [07:18<06:52,  4.31it/s] 64%|██████▍   | 3228/5007 [07:31<06:52,  4.31it/s] 71%|███████▏  | 3570/5007 [08:53<06:09,  3.89it/s] 93%|█████████▎| 4659/5007 [08:57<00:25, 13.62it/s] 98%|█████████▊| 4913/5007 [09:00<00:05, 16.19it/s]100%|██████████| 5007/5007 [09:00<00:00,  9.26it/s]
+Single-step retrosynthesis-evaluation, results on ttest:
+t1acc	t2acc	t3acc	t5acc	t10acc	t20acc	t50acc	t100acc	t101acc	
+47.45	63.73	70.66	78.25	85.26	89.73	92.49	93.07	93.29	
