@@ -1,0 +1,67 @@
+seeded with 0
+loading X, y from csv
+train 39360 samples
+valid 4920 samples
+excluded 4925 samples
+test 811 samples
+11800 templates
+  0%|          | 0/39360 [00:00<?, ?it/s]  7%|▋         | 2702/39360 [00:01<00:13, 2682.63it/s] 15%|█▍        | 5763/39360 [00:02<00:11, 2877.16it/s] 23%|██▎       | 8894/39360 [00:03<00:10, 2969.37it/s] 30%|███       | 11863/39360 [00:04<00:09, 2952.60it/s] 38%|███▊      | 14816/39360 [00:05<00:08, 2892.81it/s] 45%|████▍     | 17711/39360 [00:06<00:07, 2760.46it/s] 52%|█████▏    | 20482/39360 [00:07<00:06, 2704.46it/s] 59%|█████▉    | 23193/39360 [00:08<00:06, 2684.61it/s] 66%|██████▌   | 25882/39360 [00:09<00:05, 2618.70it/s] 72%|███████▏  | 28505/39360 [00:10<00:04, 2582.71it/s] 79%|███████▉  | 31091/39360 [00:11<00:03, 2571.36it/s] 88%|████████▊ | 34545/39360 [00:12<00:01, 2822.99it/s] 96%|█████████▌| 37618/39360 [00:13<00:00, 2885.95it/s]100%|██████████| 39360/39360 [00:13<00:00, 2821.04it/s]
+  0%|          | 0/4920 [00:00<?, ?it/s] 46%|████▌     | 2256/4920 [00:01<00:01, 2201.85it/s]100%|██████████| 4920/4920 [00:01<00:00, 2801.36it/s]
+  0%|          | 0/4925 [00:00<?, ?it/s] 50%|████▉     | 2448/4925 [00:01<00:01, 2432.51it/s]100%|██████████| 4925/4925 [00:01<00:00, 2745.98it/s]
+  0%|          | 0/811 [00:00<?, ?it/s]100%|██████████| 811/811 [00:00<00:00, 2395.62it/s]
+[811, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+{'fingerprint_type': 'morgan', 'template_fp_type': 'rdk', 'num_templates': 11800, 'fp_size': 4096, 'fp_radius': 2, 'device': 'cuda:0', 'batch_size': 128, 'pooling_operation_state_embedding': 'mean', 'pooling_operation_head': 'max', 'dropout': 0.2, 'lr': 0.0005, 'optimizer': 'Adam', 'activation_function': 'ReLU', 'verbose': False, 'hopf_input_size': 4096, 'hopf_output_size': None, 'hopf_num_heads': 1, 'hopf_asso_dim': 512, 'hopf_association_activation': 'None', 'hopf_beta': 0.05, 'norm_input': True, 'norm_asso': True, 'hopf_n_layers': 1, 'mol_encoder_layers': 1, 'temp_encoder_layers': 1, 'encoder_af': 'ReLU', 'hopf_pooling_operation_head': 'mean'}
+loading tfp from file ./data/cache/templ_emb_4096_rdk2_11800_319308756406610263009709791057247232169953402565012761665882794469049907419597432806619930615825219861593907665538161448220007278140048617814857686486870.npy
+Num of templates with added rand-vect of size 409 due to >=thresh (1): 10058
+(11800, 409) (11800,) 10058
+(11800, 4096) 11800
+adding template_matrix to params
+0it [00:00, ?it/s]153it [00:02, 76.45it/s]308it [00:03, 80.29it/s]
+/workspace/mhn-react/mhnreact/utils.py:47: RuntimeWarning: Mean of empty slice.
+  tkacc = tkacc.mean()
+/usr/local/lib/python3.10/dist-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+valid evaluatingtest evaluating 0 -- train_loss: 4.229, loss_valid: 3.869, val_t1acc: 0.329, val_t100acc: 0.843
+   [ES] New best val_loss=3.8686 -> saved ./data/model/mhn_best_checkpoint_mhn_heldout_class8_1783028255.pt
+0it [00:00, ?it/s]175it [00:02, 87.30it/s]308it [00:03, 86.62it/s]
+valid evaluatingtest evaluating 1 -- train_loss: 2.930, loss_valid: 3.477, val_t1acc: 0.381, val_t100acc: 0.871
+   [ES] New best val_loss=3.4770 -> saved ./data/model/mhn_best_checkpoint_mhn_heldout_class8_1783028255.pt
+0it [00:00, ?it/s]160it [00:02, 79.89it/s]308it [00:03, 80.20it/s]
+valid evaluatingtest evaluating 2 -- train_loss: 2.234, loss_valid: 3.284, val_t1acc: 0.393, val_t100acc: 0.883
+   [ES] New best val_loss=3.2837 -> saved ./data/model/mhn_best_checkpoint_mhn_heldout_class8_1783028255.pt
+0it [00:00, ?it/s]171it [00:02, 85.47it/s]308it [00:03, 82.77it/s]
+valid evaluatingtest evaluating 3 -- train_loss: 1.840, loss_valid: 3.235, val_t1acc: 0.398, val_t100acc: 0.886
+   [ES] New best val_loss=3.2351 -> saved ./data/model/mhn_best_checkpoint_mhn_heldout_class8_1783028255.pt
+0it [00:00, ?it/s]161it [00:02, 80.28it/s]308it [00:03, 80.87it/s]
+valid evaluatingtest evaluating 4 -- train_loss: 1.583, loss_valid: 3.241, val_t1acc: 0.407, val_t100acc: 0.889
+   [ES] No improvement 1/10 (best=3.2351)
+0it [00:00, ?it/s]176it [00:02, 87.79it/s]308it [00:03, 87.79it/s]
+valid evaluatingtest evaluating 5 -- train_loss: 1.398, loss_valid: 3.235, val_t1acc: 0.406, val_t100acc: 0.885
+   [ES] No improvement 2/10 (best=3.2351)
+0it [00:00, ?it/s]174it [00:02, 86.81it/s]308it [00:03, 86.97it/s]
+valid evaluatingtest evaluating 6 -- train_loss: 1.247, loss_valid: 3.240, val_t1acc: 0.407, val_t100acc: 0.884
+   [ES] No improvement 3/10 (best=3.2351)
+0it [00:00, ?it/s]175it [00:02, 87.16it/s]308it [00:03, 87.06it/s]
+valid evaluatingtest evaluating 7 -- train_loss: 1.131, loss_valid: 3.267, val_t1acc: 0.404, val_t100acc: 0.882
+   [ES] No improvement 4/10 (best=3.2351)
+0it [00:00, ?it/s]172it [00:02, 85.97it/s]308it [00:03, 86.57it/s]
+valid evaluatingtest evaluating 8 -- train_loss: 1.060, loss_valid: 3.238, val_t1acc: 0.411, val_t100acc: 0.884
+   [ES] No improvement 5/10 (best=3.2351)
+0it [00:00, ?it/s]175it [00:02, 87.08it/s]308it [00:03, 87.14it/s]
+valid evaluatingtest evaluating 9 -- train_loss: 0.985, loss_valid: 3.246, val_t1acc: 0.409, val_t100acc: 0.884
+   [ES] No improvement 6/10 (best=3.2351)
+0it [00:00, ?it/s]170it [00:02, 84.91it/s]308it [00:03, 85.78it/s]
+valid evaluatingtest evaluating10 -- train_loss: 0.928, loss_valid: 3.272, val_t1acc: 0.411, val_t100acc: 0.882
+   [ES] No improvement 7/10 (best=3.2351)
+0it [00:00, ?it/s]169it [00:02, 84.09it/s]308it [00:03, 85.53it/s]
+valid evaluatingtest evaluating11 -- train_loss: 0.881, loss_valid: 3.278, val_t1acc: 0.408, val_t100acc: 0.881
+   [ES] No improvement 8/10 (best=3.2351)
+0it [00:00, ?it/s]172it [00:02, 85.93it/s]308it [00:03, 86.56it/s]
+valid evaluatingtest evaluating12 -- train_loss: 0.828, loss_valid: 3.260, val_t1acc: 0.409, val_t100acc: 0.883
+   [ES] No improvement 9/10 (best=3.2351)
+0it [00:00, ?it/s]173it [00:02, 86.27it/s]308it [00:03, 86.35it/s]
+valid evaluatingtest evaluating13 -- train_loss: 0.808, loss_valid: 3.319, val_t1acc: 0.410, val_t100acc: 0.878
+   [ES] No improvement 10/10 (best=3.2351)
+   [ES] Early stopping triggered! Best val_loss=3.2351
+model saved to data/model/USPTO_50k_mhn_valloss3.319_mhn_heldout_class8_1783028255.pt
+3.2351349194844565
