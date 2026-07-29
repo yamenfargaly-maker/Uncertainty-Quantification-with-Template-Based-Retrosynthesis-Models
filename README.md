@@ -5,7 +5,7 @@
 Yamen Fargaly, Princeton University
 USPTO-50K, standard test split (n = 5,007)
 
-Full paper: [paper/Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models.pdf](paper/Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models (9).pdf)
+Full paper: [Uncertainty Quantification and Calibration in Template-Based Retrosynthesis Models](paper/Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models.pdf)
 
 ## Abstract
 
