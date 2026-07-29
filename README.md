@@ -6,6 +6,7 @@ Yamen Fargaly, Princeton University
 USPTO-50K, standard test split (n = 5,007)
 
 Full paper: [Uncertainty Quantification and Calibration in Template-Based Retrosynthesis Models](paper/Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models.pdf)
+Supporting Information: [Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models_Supporting_Information.pdf](paper/Uncertainty_Quantification_and_Calibration_in_Template_Based_Retrosynthesis_Models_Supporting_Information.pdf)
 
 ## Abstract
 
@@ -39,7 +40,7 @@ mhn-react/             Modern Hopfield Network retrosynthesis model (Seidl et al
   mhn_*.py, *.sh        MC dropout, OOD evaluation, Mondrian conformal prediction, and
                        ensemble training/combination scripts used in the paper
 
-paper/                 The full report (PDF) this README summarizes
+paper/                 The full report (PDF) this README summarizes, plus its Supporting Information
 ```
 
 ## Methodology
